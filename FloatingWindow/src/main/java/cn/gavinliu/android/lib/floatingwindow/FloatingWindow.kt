@@ -33,9 +33,9 @@ class FloatingWindow {
             return Builder(context, floatingView)
         }
 
-        fun get() = getInstance().mMap[DEFAULT_TAG]
+        fun get(): IFloatingWindow? = getInstance().mMap[DEFAULT_TAG]
 
-        fun get(tag: String) = getInstance().mMap[tag]
+        fun get(tag: String): IFloatingWindow? = getInstance().mMap[tag]
 
         fun clear(tag: String?) {
             getInstance().mMap.remove(tag)

@@ -18,8 +18,18 @@ class BannerFloatingView : FloatingView() {
         }
     }
 
-    override fun onDestroy() {
+    override fun onShown() {
+        super.onShown()
         // TODO
+    }
+
+    override fun onHide() {
+        super.onHide()
+        // TODO
+    }
+
+    override fun onDestroy() {
         super.onDestroy()
+        // TODO
     }
 }
